@@ -1,0 +1,48 @@
+---
+import Card from '../components/Card.astro';
+import Categories from '../components/Categories.astro';
+import Product from '../components/Product.astro';
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="PARCIAL">
+	<section class="w-full bg-gray-400/90 h-[400px] flex flex-row space-x-5">
+		<div class="ml-10 w-[600px] h-full my-10 justify-between relative items-end" style="background-image: url('https://cdn-3.expansion.mx/dims4/default/6794acf/2147483647/strip/true/crop/1200x675+0+0/resize/1200x675!/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F57%2F72%2F65a022314ae78a81d8afc56cc633%2Fnike-tiffany-air-force-collab.jpg'); background-size: contain; background-repeat: no-repeat;">
+			<div class="w-full h-[80px] bg-black bg-opacity-50 items-center flex space-x-6 absolute mt-auto">
+				<h2 class="text-orange-700 text-lg font-bold ml-8">FASHION</h2>
+				<p class="text-white text-sm">Texto cualquiera</p>
+			</div>
+		</div>
+		<Card title='ARCHITECTURE' date='05 March 2020' text="Information the a section" image='https://st4.depositphotos.com/1010683/41421/i/450/depositphotos_414214134-stock-photo-woman-look-city-view-night.jpg'/>
+		<Card title='CREATIVITY' date='28 February 2020' text="Information the a section " image='https://st.depositphotos.com/1000504/1903/i/450/depositphotos_19033473-stock-photo-coffee-cup.jpg'/>
+	</section>
+	<section class="mt-10 flex flex-col w-full">
+		<div class="flex  flex-col">
+		<h1 class="text-black font-extrabold tracking-wide text-center text-2xl">Popular category</h1>
+		<p class="mt-2 text-center text-slate-400">Explore our blog for insightful articles</p>
+		</div>
+		<div class="flex flex-row w-[90%] justify-between mt-5 ml-14">
+			<Product category='FOODS' image='https://img.freepik.com/fotos-premium/comida-chuleta-cordero-ensalada-verduras-tomates-formato-banner-largo-vista-superior_114941-2431.jpg'/>
+			<Product category='FOODS' image='https://img.freepik.com/fotos-premium/comida-chuleta-cordero-ensalada-verduras-tomates-formato-banner-largo-vista-superior_114941-2431.jpg'/>
+			<Product category='FOODS' image='https://img.freepik.com/fotos-premium/comida-chuleta-cordero-ensalada-verduras-tomates-formato-banner-largo-vista-superior_114941-2431.jpg'/>
+			<Product category='FOODS' image='https://img.freepik.com/fotos-premium/comida-chuleta-cordero-ensalada-verduras-tomates-formato-banner-largo-vista-superior_114941-2431.jpg'/>
+			
+		</div>
+	</section>
+	<section class="mt-10 flex flex-col w-full bg-gray-400/95">
+		<div class="flex  flex-col">
+		<h1 class="text-black font-extrabold tracking-wide text-center text-2xl">Latest Article</h1>
+		<p class="mt-2 text-center text-slate-400">Explore our blog for insightful articles</p>
+		</div>
+		<div class="flex flex-row mt-5 space-x-2">
+		<Categories text='Lorem impsum dolor' title='Lorem impsum' date='20 March 2020' image='https://img.freepik.com/foto-gratis/sonrisa-feliz-mujer-asiatica-joven-hermosa-retrato-relaja-alrededor-playa-mar-neary_74190-8155.jpg' category='fashion'/>
+		<Categories text='Lorem impsum dolor' title='Lorem impsum' date='20 March 2020' image='https://img.freepik.com/foto-gratis/sonrisa-feliz-mujer-asiatica-joven-hermosa-retrato-relaja-alrededor-playa-mar-neary_74190-8155.jpg' category='fashion'/>
+		<Categories text='Lorem impsum dolor' title='Lorem impsum' date='20 March 2020' image='https://img.freepik.com/foto-gratis/sonrisa-feliz-mujer-asiatica-joven-hermosa-retrato-relaja-alrededor-playa-mar-neary_74190-8155.jpg' category='fashion'/>
+		<Categories text='Lorem impsum dolor' title='Lorem impsum' date='20 March 2020' image='https://img.freepik.com/foto-gratis/sonrisa-feliz-mujer-asiatica-joven-hermosa-retrato-relaja-alrededor-playa-mar-neary_74190-8155.jpg' category='fashion'/>
+		<Categories text='Lorem impsum dolor' title='Lorem impsum' date='20 March 2020' image='https://img.freepik.com/foto-gratis/sonrisa-feliz-mujer-asiatica-joven-hermosa-retrato-relaja-alrededor-playa-mar-neary_74190-8155.jpg' category='fashion'/>
+		</div>
+	<section/>
+	<Footer />
+</Layout>
+
+	

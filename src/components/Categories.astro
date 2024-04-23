@@ -1,0 +1,22 @@
+---
+interface Props{
+    category : string;
+    image: string;
+    date: string;
+    text: string;
+    title: string;
+}
+const {category,image,date, text, title } = Astro.props;
+---
+<div class="h-[200px] w-[400px] ml-5 flex flex-col">
+<div class="h-[50%] w-[50%] cover " style={{backgroundImage: `url(${image})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}}>
+    <div class="bg-black w-[80px] h-8 bg-opacity-80 flex justify-center items-center mt-3 ml-auto mr-2">
+        <h5 class="text-center text-lg font-semibold text-white">{category}</h5>
+    </div>
+</div> 
+    <div class=" flex h-[50%] w-[50%] bg-white flex-col mt-0 justify-center">
+        <p class="text-slate-700 text-center text-xs ml-3">{date}</p>
+        <p class="text-black text-sm text-wrap ml-3 font-semibold mt-2"{title}></p>
+        <p class="text-slate-700 text-xs text-wrap ml-3 mt-2">{text}</p>
+    </div>
+</div>
